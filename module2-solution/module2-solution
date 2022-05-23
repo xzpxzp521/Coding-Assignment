@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Assignment Solution for Module 2</title>
+	<style>
+		.section {
+		background-color: #A52A2A;
+		height: 150px;
+		width: 300px;
+		border: 5px;
+		}
+		.subsection{
+		background-color: green;
+		text-align: center;
+		border: 5px;
+		width: 100px;
+		float: right;
+		}
+		/***** Large *****/
+		@media (min-width: 992px){
+		#div1 {
+			width: 33.33%;
+			float: left;
+			}
+		#div2 {
+			width: 33.33%;
+			float: left;
+		}
+		#div3{
+			width: 33.33%;
+			float: left;
+		}
+		}
+		
+		/**** Medium ****/
+		@media (min-width: 768px) and (max-width: 991px) {
+		#div1 {
+			width: 50%;
+			float: left;
+			}
+		#div2 {
+			width: 50%;
+			float: left;
+		}
+		#div3{
+			width: 100%;
+			clear: both;
+		}
+        }
+        
+        /***** Small *****/
+        @media (max-width: 767px) {
+        #div1 {
+			width: 100%;
+			}
+		#div2 {
+			width: 100%;
+		}
+		#div3{
+			width: 100%
+		}
+        
+        }
+	</style>
+	</head>	
+	<body>
+		<h1>Our Company Department</h1>
+		<div class="section" id="div1">
+			<div class="subsection">Sales</div>
+			Having a strong sales team is crucial to the success of a company because the sales department is responsible for making sales, growing your business and retaining existing customers. 
+		</div>
+		<div class="section" id="div2">
+			<div class="subsection">Research</div>
+			Research department means any department or division, whether or not identified as such, that is principally responsible for preparing the substance of a research report or security recommendation.
+		</div>
+		<div class="section" id="div3">
+			<div class="subsection">Operation</div>
+			An operations department ensures that the production process is completed from start to finish. These production processes need to line up with the goals and functions of other departments within a company.
+		</div>
+	</body>
+</html>
